@@ -1,44 +1,107 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Foodtruck Radar - Trouvez les meilleurs foodtrucks près de chez vous">
-  <title>Foodtruck Radar</title>
-  <link rel="stylesheet" href="styles/styles.css" />
-  <link rel="icon" href="assets/logo.png" type="image/png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodtruckradar.fr - Trouvez les meilleurs foodtrucks près de chez vous</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <img src="assets/logo.png" alt="Logo Foodtruck Radar" class="logo" />
-    <h1>Foodtruck Radar</h1>
-    <p class="tagline">Trouvez les meilleurs foodtrucks près de chez vous</p>
-  </header>
 
-  <main>
-    <section class="hero">
-      <h2>Une carte, des foodtrucks, et vous</h2>
-      <p>
-        Foodtruck Radar vous permet de visualiser en temps réel les foodtrucks proches de chez vous.
-        Géolocalisation, menus, horaires, tout y est. L’application est en cours de finalisation.
-      </p>
-    </section>
-  </main>
+    <header>
+        <div class="container">
+            <h1>Foodtruckradar.fr</h1>
+            <p class="subtitle">La plateforme qui met en relation les amateurs de street-food et les propriétaires de foodtrucks.</p>
+        </div>
+    </header>
 
-  <footer>
-    <div class="mentions">
-      <p><strong>Mentions utiles</strong></p>
-      <ul>
-        <li>Plateforme développée par Fabien Chalon (FC IT)</li>
-        <li>Application en version bêta</li>
-        <li>Vérification d'identité et paiements sécurisés via Stripe</li>
-        <li>Abonnement mensuel pour les options avancées (freemium disponible)</li>
-      </ul>
-      <p class="privacy">
-        Aucune donnée sensible n’est stockée sans consentement.
-        Les vérifications d'identité sont assurées par Stripe. RGPD respecté.
-      </p>
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>À Propos de Notre Projet</h2>
+                <p>
+                    <strong>Foodtruckradar.fr</strong> est une application en cours de développement dont la mission est de simplifier la découverte de foodtrucks. Tel un "Uber Eats" de la street-food, notre plateforme permettra aux utilisateurs de localiser en temps réel les meilleurs foodtrucks autour d'eux grâce à une carte interactive.
+                </p>
+                <p>
+                    Pour les propriétaires de foodtrucks, notre service offre une visibilité inégalée. Avant de pouvoir publier leur emplacement, chaque propriétaire devra passer une vérification d'identité via <strong>Stripe Identity</strong>. Cette étape cruciale garantit la fiabilité et la sécurité de notre communauté, en s'assurant que seuls des professionnels vérifiés peuvent apparaître sur la carte.
+                </p>
+                 <p>
+                    Le lancement de l'application est prévu prochainement. Nous finalisons actuellement l'intégration des paiements sécurisés avec Stripe pour la gestion des abonnements.
+                </p>
+            </div>
+        </section>
+
+        <section id="pricing">
+            <div class="container">
+                <h2>Nos Futurs Abonnements pour les Professionnels</h2>
+                <p>Nous proposerons deux offres adaptées aux besoins de chaque propriétaire de foodtruck.</p>
+                <div class="price-plan">
+                    <h3>Offre Découverte</h3>
+                    <p class="price">Gratuit</p>
+                    <ul>
+                        <li>Vérification via Stripe Identity</li>
+                        <li>Création d'un profil pour 1 foodtruck</li>
+                        <li>Ajout des informations (menu, photos, etc.)</li>
+                        <li>Positionnement sur la carte</li>
+                    </ul>
+                </div>
+                <div class="price-plan">
+                    <h3>Offre Premium</h3>
+                    <p class="price">[Prix de l'abonnement Premium] € / mois</p>
+                    <ul>
+                        <li><strong>Tous les avantages de l'offre Découverte</strong></li>
+                        <li>Ajout d'un nombre illimité de foodtrucks</li>
+                        <li>Planification d'itinéraire (itinérance)</li>
+                        <li>Mise à jour automatique de la position sur la carte</li>
+                        <li>Mise en avant auprès des utilisateurs à proximité</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact & Informations Légales</h2>
+                <p>
+                    Foodtruckradar.fr est un service développé par la société FC IT, dirigée par Fabien CHALON.
+                </p>
+                <p>
+                    <strong>Email :</strong> <a href="mailto:contact@foodtruckradar.fr">contact@foodtruckradar.fr</a><br>
+                    <strong>Société :</strong> FC IT<br>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>
+                FC IT - SIRET : 939 118 212 00017 <br>
+                &copy; 2025 Foodtruckradar.fr. Tous droits réservés.
+            </p>
+            <p>
+                <a href="#terms">Conditions Générales de Vente</a> | <a href="#privacy">Politique de Confidentialité</a> | <a href="#refund">Politique de Remboursement</a>
+            </p>
+        </div>
+    </footer>
+
+    <div class="modal-container">
+        <section id="terms" class="modal">
+             <h3>Conditions Générales de Vente (à compléter)</h3>
+             <p>Veuillez détailler ici les conditions d'utilisation du service pour les propriétaires de foodtrucks, les modalités de souscription à l'offre Premium, la durée de l'engagement, les conditions de paiement via Stripe, etc.</p>
+             <a href="#" class="modal-close">Fermer</a>
+        </section>
+        <section id="privacy" class="modal">
+            <h3>Politique de Confidentialité (à compléter)</h3>
+            <p>Veuillez expliquer ici comment les données des utilisateurs et des propriétaires sont collectées et traitées (comptes, avis, données de localisation, informations de vérification d'identité via Stripe Identity). Assurez la conformité avec le RGPD.</p>
+            <a href="#" class="modal-close">Fermer</a>
+        </section>
+        <section id="refund" class="modal">
+            <h3>Politique de Remboursement (à compléter)</h3>
+            <p>Veuillez décrire votre politique concernant les abonnements Premium. Par exemple : "Les abonnements sont sans engagement et peuvent être annulés à tout moment. Aucun remboursement ne sera effectué pour le mois en cours."</p>
+            <a href="#" class="modal-close">Fermer</a>
+        </section>
     </div>
-  </footer>
+
 </body>
 </html>
