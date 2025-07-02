@@ -1,21 +1,17 @@
-/* Palette sombre et moderne */
+/* Base */
 body {
   margin: 0;
-  font-family: 'Segoe UI', Roboto, sans-serif;
+  padding: 0;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
   background-color: #020817;
   color: #ffffff;
   line-height: 1.6;
+  text-align: center;
 }
 
-/* Logo et header */
+/* Header */
 header {
-  padding: 1.5rem 2rem;
-  background-color: #0f172a;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border-bottom: 1px solid #1e293b;
+  padding: 2rem 1rem 1rem;
 }
 
 .logo {
@@ -24,51 +20,53 @@ header {
 }
 
 h1 {
-  margin: 0;
   font-size: 2rem;
+  margin: 0;
 }
 
 .tagline {
   font-size: 1rem;
-  opacity: 0.75;
+  color: #94a3b8;
+  margin-top: 0.25rem;
 }
 
-/* Section principale */
-main {
-  padding: 2rem 1rem;
-  text-align: center;
+/* Hero section */
+.hero {
+  padding: 3rem 1rem;
 }
 
 .hero h2 {
   font-size: 1.8rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .hero p {
-  max-width: 600px;
+  max-width: 640px;
   margin: 0 auto 2rem;
   color: #cbd5e1;
 }
 
+/* CTA buttons */
 .cta-buttons {
   display: flex;
   justify-content: center;
-  gap: 1rem;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .btn {
-  text-decoration: none;
   padding: 0.75rem 1.5rem;
-  border-radius: 6px;
+  border-radius: 8px;
   font-weight: 600;
   font-size: 1rem;
+  text-decoration: none;
   transition: background-color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
 }
 
 .btn.orange {
   background-color: #f97316;
-  color: white;
+  color: #fff;
 }
 
 .btn.orange:hover {
@@ -78,7 +76,7 @@ main {
 
 .btn.blue {
   background-color: #3c83f6;
-  color: white;
+  color: #fff;
 }
 
 .btn.blue:hover {
@@ -88,47 +86,44 @@ main {
 
 /* Footer */
 footer {
+  padding: 2rem 1rem;
   background-color: #0f172a;
-  padding: 2rem;
-  color: #cbd5e1;
+  color: #94a3b8;
   font-size: 0.9rem;
-  border-top: 1px solid #1e293b;
 }
 
-footer .mentions ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
+footer ul {
+  list-style: none;
+  padding: 0;
   margin: 1rem 0;
 }
 
-footer .mentions p,
-footer .mentions li {
-  margin: 0.5rem 0;
+footer li {
+  margin-bottom: 0.5rem;
 }
 
-.privacy {
+footer .privacy {
   margin-top: 1rem;
-  font-style: italic;
   font-size: 0.85rem;
-  color: #94a3b8;
+  font-style: italic;
 }
 
 /* Responsive */
-@media (max-width: 600px) {
-  .cta-buttons {
-    flex-direction: column;
-    gap: 0.75rem;
+@media (max-width: 640px) {
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 280px;
   }
 
   .logo {
     height: 48px;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  .hero h2 {
-    font-size: 1.5rem;
   }
 }
