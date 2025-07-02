@@ -2,46 +2,43 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Foodtruck Radar - Localisez les meilleurs foodtrucks autour de vous. Application en version bêta."/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Foodtruck Radar - Trouvez les meilleurs foodtrucks près de chez vous">
   <title>Foodtruck Radar</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/logo.png" type="image/png">
 </head>
 <body>
-  <main class="container">
-    <h1>Une carte, des foodtrucks, et vous</h1>
-    <p class="lead">
-      Foodtruck Radar vous permet de visualiser en temps réel les foodtrucks proches de chez vous.<br />
-      Géolocalisation, menus, horaires, tout y est.
-    </p>
+  <header>
+    <div class="header-content">
+      <img src="assets/logo.png" alt="Logo Foodtruck Radar" class="logo">
+      <h1>Foodtruck Radar</h1>
+      <p class="tagline">Trouvez les meilleurs foodtrucks près de chez vous</p>
+    </div>
+  </header>
 
-    <section class="info">
-      <h2>Mentions légales</h2>
-      <ul>
-        <li><strong>Éditeur :</strong> Fabien Chalon (FC IT)</li>
-        <li><strong>Service :</strong> Mise en relation entre consommateurs et foodtrucks</li>
-        <li><strong>Statut :</strong> Application en version bêta</li>
-        <li><strong>Paiements & vérification :</strong> Sécurisés via Stripe</li>
-        <li><strong>Tarification :</strong> Freemium avec abonnement mensuel pour les options avancées</li>
-        <li><strong>Contact :</strong> <a href="mailto:contact@foodtruckradar.fr">contact@foodtruckradar.fr</a></li>
-        <li><strong>Politique de remboursement :</strong> Non applicable à ce stade (aucune facturation active)</li>
-      </ul>
+  <main>
+    <section class="hero">
+      <h2>Une carte, des foodtrucks, et vous</h2>
+      <p>Foodtruck Radar vous permet de visualiser en temps réel les foodtrucks proches de chez vous. Géolocalisation, menus, horaires, tout y est.</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn orange">Voir les offres</a>
+        <a href="#" class="btn blue">Publier mon foodtruck</a>
+      </div>
     </section>
-
-    <section class="privacy">
-      <h2>Politique de confidentialité</h2>
-      <p>
-        Foodtruck Radar respecte votre vie privée :<br />
-        Aucune donnée sensible n’est stockée sans consentement.<br />
-        Les vérifications d'identité sont assurées par Stripe Identity, conforme RGPD.<br />
-        Les paiements sont gérés par Stripe sans que nous conservions vos données bancaires.<br />
-        Une politique complète sera disponible à la sortie de la version finale.
-      </p>
-    </section>
-
-    <footer>
-      <p>&copy; 2025 Foodtruck Radar – Tous droits réservés</p>
-    </footer>
   </main>
+
+  <footer>
+    <div class="mentions">
+      <p><strong>Mentions utiles</strong></p>
+      <ul>
+        <li>Plateforme développée par Fabien Chalon (FC IT)</li>
+        <li>Application en version bêta</li>
+        <li>Vérification d'identité et paiements sécurisés via Stripe</li>
+        <li>Abonnement mensuel pour les options avancées (freemium disponible)</li>
+      </ul>
+      <p class="privacy">Aucune donnée sensible n’est stockée sans consentement. Les vérifications d'identité sont assurées par Stripe. RGPD respecté.</p>
+    </div>
+  </footer>
 </body>
 </html>
