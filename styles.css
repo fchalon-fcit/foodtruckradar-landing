@@ -1,52 +1,134 @@
-/* Base layout */
+/* Palette sombre et moderne */
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', Roboto, sans-serif;
   background-color: #020817;
-  color: white;
+  color: #ffffff;
   line-height: 1.6;
+}
+
+/* Logo et header */
+header {
+  padding: 1.5rem 2rem;
+  background-color: #0f172a;
   display: flex;
+  align-items: center;
   justify-content: center;
-  padding: 2rem;
+  flex-direction: column;
+  border-bottom: 1px solid #1e293b;
 }
 
-a {
-  color: #3C83F6;
-  text-decoration: underline;
-}
-
-.container {
-  max-width: 800px;
-  padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.05);
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-}
-
-h1 {
-  color: #F97316;
-  font-size: 2rem;
+.logo {
+  height: 64px;
   margin-bottom: 1rem;
 }
 
-h2 {
-  margin-top: 2rem;
-  color: #3C83F6;
+h1 {
+  margin: 0;
+  font-size: 2rem;
 }
 
-ul {
+.tagline {
+  font-size: 1rem;
+  opacity: 0.75;
+}
+
+/* Section principale */
+main {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  color: #cbd5e1;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn.orange {
+  background-color: #f97316;
+  color: white;
+}
+
+.btn.orange:hover {
+  background-color: #ea580c;
+  transform: translateY(-2px);
+}
+
+.btn.blue {
+  background-color: #3c83f6;
+  color: white;
+}
+
+.btn.blue:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  background-color: #0f172a;
+  padding: 2rem;
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  border-top: 1px solid #1e293b;
+}
+
+footer .mentions ul {
   list-style-type: disc;
   padding-left: 1.5rem;
+  margin: 1rem 0;
 }
 
-.lead {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+footer .mentions p,
+footer .mentions li {
+  margin: 0.5rem 0;
 }
 
-footer {
-  margin-top: 2rem;
-  font-size: 0.9rem;
-  opacity: 0.7;
-  text-align: center;
+.privacy {
+  margin-top: 1rem;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .cta-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .logo {
+    height: 48px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
 }
